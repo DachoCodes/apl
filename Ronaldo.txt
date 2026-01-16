@@ -1,0 +1,89 @@
+\documentclass[12pt,a4paper,twocolumn]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{center}
+{\Large Završni ispit -- grupa: 114}\[1em]
+vaše ime i prezime\[0.5em]
+januar 2022.
+\end{center}
+
+\section{Tekst i futnote}
+
+Ulažite u stomak! To ulaganje daje brze i vidljive rezultate.
+Ulaganje u glavu je dugoročno i neizvesno.
+
+Ako si se uputio prema cilju, i putem počeo da zastajkuješ
+i kamenjem gađaš svakog psa koji na tebe laje,
+nikada nećeš stići na cilj.\footnote{Duško Radović}
+
+\section{Formule}
+
+Unutar teksta: $x \ge 15$.
+
+U posebnoj liniji:
+[
+\frac{1}{2 + x} = \sin \beta + \cos \beta
+]
+
+\subsection{Matrice}
+
+[
+A =
+\begin{bmatrix}
+1 & x & 65 \
+43 & 6 & 8 \
+5 & 57 & 9
+\end{bmatrix}
+]
+
+[
+A^2 =
+\begin{bmatrix}
+1 & x & 65 \
+43 & 6 & 8 \
+5 & 57 & 9
+\end{bmatrix}
+\begin{bmatrix}
+1 & x & 65 \
+43 & 6 & 8 \
+5 & 57 & 9
+\end{bmatrix}
+]
+
+Uočite da se ista matrica tri puta pojavljuje.\footnote{F. M. Dostojevski}
+
+\section{Ostalo}
+
+\subsection{Tabela}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Jedinica & Iznos & Opis \
+\hline
+cm & 1431 & dužina \
+kilometar & 9 & udaljenost \
+A & 73 & struja \
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{Numerisana lista}
+
+\begin{enumerate}
+\item Dužina 1431 cm
+\item Udaljenost 9 kilometara
+\item Struja 73 A
+\end{enumerate}
+
+Nakon uploada PDF fajla unesite u polje za odgovor broj: \textbf{6158}
+
+\newpage
+\tableofcontents
+
+\end{document}
