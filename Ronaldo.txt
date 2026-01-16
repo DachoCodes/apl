@@ -1,89 +1,62 @@
-\documentclass[12pt,a4paper,twocolumn]{article}
+documentclass[12pt,a4paper,twocolumn]{article}
 
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
+begin{document}
 
-\begin{document}
+title{Priprema za zavrsni ispit}
+author{Petar Bulatovic}
+maketitle
 
-\begin{center}
-{\Large Završni ispit -- grupa: 114}\[1em]
-vaše ime i prezime\[0.5em]
-januar 2022.
-\end{center}
+begin{abstract}
+Ova vjezba je ujedno i priprema za zavrsni ispit. Zavrsni ispit ce se odrzati 09.01.2019. godine u 12 sati. 
+textsl{Sazetak je pisan u textbf{abstract} okruzenju}
+end{abstract}
 
-\section{Tekst i futnote}
+section{Formule}
+Posmatrajmo funkciju f(x) definisanu formulom
 
-Ulažite u stomak! To ulaganje daje brze i vidljive rezultate.
-Ulaganje u glavu je dugoročno i neizvesno.
+begin{equation}
+f(x)=arctg left(frac{x(x^2-3)}{x^2+2}right)
+label{1}
+end{equation}
 
-Ako si se uputio prema cilju, i putem počeo da zastajkuješ
-i kamenjem gađaš svakog psa koji na tebe laje,
-nikada nećeš stići na cilj.\footnote{Duško Radović}
+subsection{Prvi izvod}
+Prvi izvod funkcije (ref{1})
 
-\section{Formule}
+begin{equation}
+ddot{f}(x)=frac{x^4_1+8x^2-sqrt{25+25}}{x^4-3x^4+8x^2} 
+label{2}
+end{equation}
 
-Unutar teksta: $x \ge 15$.
+subsection{Ekstremne vrijednosti}
+Dobijaju se trazenjem nula prvog izvoda (ref{2}). U posmatranom slucaju imamo dva rjesenja koja su navedena u tabeli footnote{Tabela je centrirana}
+begin{table}[h]
+centering
+begin{tabular}{cccrllp{10cm}}
+hline
+(frac{x_1}{sqrt{2sqrt{5}-4}}) & (frac{x_2}{sqrt{2sqrt{5}-4}}) 
+hline
+maksimum & minimum
+hline
+end{tabular}
+end{table}
 
-U posebnoj liniji:
-[
-\frac{1}{2 + x} = \sin \beta + \cos \beta
-]
+Uocite da je $x_1=x_2$
 
-\subsection{Matrice}
+subsection{Dodatno}
 
-[
-A =
-\begin{bmatrix}
-1 & x & 65 \
-43 & 6 & 8 \
-5 & 57 & 9
-\end{bmatrix}
-]
+Za posmatranu funkciju imamo da je
 
-[
-A^2 =
-\begin{bmatrix}
-1 & x & 65 \
-43 & 6 & 8 \
-5 & 57 & 9
-\end{bmatrix}
-\begin{bmatrix}
-1 & x & 65 \
-43 & 6 & 8 \
-5 & 57 & 9
-\end{bmatrix}
-]
+$$S=sum_{n=0}^{N}ddot{f}(n)=ddot{f}(0)+ddot{f}(1)+...+ddot{f}(N)$$
+vrijednost koja je bliska jedinici za $Ngg1$
 
-Uočite da se ista matrica tri puta pojavljuje.\footnote{F. M. Dostojevski}
+section{Dokument}
+begin{enumerate}
+item 123
+item 456
+item 789
+end{enumerate}
 
-\section{Ostalo}
+tableofcontents
 
-\subsection{Tabela}
 
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-Jedinica & Iznos & Opis \
-\hline
-cm & 1431 & dužina \
-kilometar & 9 & udaljenost \
-A & 73 & struja \
-\hline
-\end{tabular}
-\end{center}
-
-\subsection{Numerisana lista}
-
-\begin{enumerate}
-\item Dužina 1431 cm
-\item Udaljenost 9 kilometara
-\item Struja 73 A
-\end{enumerate}
-
-Nakon uploada PDF fajla unesite u polje za odgovor broj: \textbf{6158}
-
-\newpage
-\tableofcontents
-
-\end{document}
+end{document}
